@@ -28,14 +28,7 @@ cat aliases.sh >> "$SHELL_RC"
 
 # Add ASCII art greeting
 log "Adding cute ASCII greeting..."
-echo -e '\ncat ~/custom_terminal_setup_install/ascii_art.txt' >> "$SHELL_RC"
-
-# Optional: install cowsay/figlet if available
-if command -v cowsay &> /dev/null; then
-  echo 'cowsay "You got this! 💪"' >> "$SHELL_RC"
-else
-  log "Optional: install cowsay for fun terminal messages 🐮"
-fi
+echo -e '\ncat ~/Cute-Custom-Terminal-Install/ascii_art.txt' >> "$SHELL_RC"
 
 # Offer to install Starship (prompt)
 echo ""
