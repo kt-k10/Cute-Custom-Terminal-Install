@@ -1,0 +1,9 @@
+echo "
+      /\\_____/\\            🌸 Welcome to your terminal 🌸
+     /  o   o  \\                   You got this!
+    ( ==  ^  == )          
+     )         (           -----------------------------
+    (           )          Have a productive session :3
+   ( (  )   (  ) )
+  (__(__)___(__)__)
+"
