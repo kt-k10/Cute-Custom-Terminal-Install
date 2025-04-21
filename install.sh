@@ -4,7 +4,7 @@
 
 # Cute log function
 log() {
-  echo -e "🌸 $1"
+  echo -e "- $1"
 }
 
 log "Starting your custom terminal setup!"
