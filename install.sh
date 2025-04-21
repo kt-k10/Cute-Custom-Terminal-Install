@@ -49,4 +49,4 @@ if [ "$shell" == "zsh" ]; then
   fi
 fi
 
-log "All done! Restart your terminal or run 'source $SHELL_RC' to see it in action 💫"
+log "All done! Restart your terminal or run 'source $SHELL_RC' to see it in action :)"
