@@ -15,16 +15,14 @@ This script works with both Bash and Zsh. It also creates a backup of your origi
    
    ```install.sh```
 
-   If you try to run the install.sh script but get an execution permissions error:
-
-   Run the following command to make the script executable:
+If you try to run the install.sh script but get an execution permissions error, run the following command to make the script executable:
 
 
-```chmod +x install.sh```
+   ```chmod +x install.sh```
 
 Now, you can run the script with:
 
-```./install.sh```
+   ```./install.sh```
 
 
 4. Restart your terminal, or reload your config:
