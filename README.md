@@ -13,7 +13,7 @@ This script works with both Bash and Zsh. It also creates a backup of your origi
 
 2. Run the installer:
    
-   ```install.sh```
+   ```./install.sh```
 
 If you try to run the install.sh script but get an execution permissions error, run the following command to make the script executable:
 
