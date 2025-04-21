@@ -1,11 +1,11 @@
 ## custom_terminal_setup_install
 A shell script that customizes your terminal setup by adding:
 
-Useful aliases
+- Useful aliases
 
-A terminal greeting with ASCII art
+- A terminal greeting with ASCII art
 
-Optional support for tools like cowsay
+- Optional support for tools like cowsay
 
 This script works with both Bash and Zsh. It also creates a backup of your original shell config file before making changes.
 
@@ -13,15 +13,15 @@ This script works with both Bash and Zsh. It also creates a backup of your origi
 
 2. Run the installer:
    
-```install.sh```
+   ```install.sh```
 
 3. Restart your terminal, or reload your config:
 
-```source ~/.bashrc```
+   ```source ~/.bashrc```
 
 or
 
-```source ~/.zshrc```
+   ```source ~/.zshrc```
 
 
 ## Notes
