@@ -9,9 +9,9 @@ A shell script that customizes your terminal setup by adding:
 
 This script works with both Bash and Zsh. It also creates a backup of your original shell config file before making changes.
 
-1. Clone this repository and cd into it
+### 1. Clone this repository and cd into it
 
-2. Run the installer:
+### 2. Run the installer:
    
    ```./install.sh```
 
@@ -25,11 +25,11 @@ Now, you can run the script with:
    ```./install.sh```
 
 
-4. Restart your terminal, or reload your config:
+### 3. Restart your terminal, or reload your config:
 
    ```source ~/.bashrc```
 
-or
+   or
 
    ```source ~/.zshrc```
 
