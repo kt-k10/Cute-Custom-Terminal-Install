@@ -1,4 +1,4 @@
-##custom_terminal_setup_install
+## custom_terminal_setup_install
 A lightweight shell script that customizes your terminal setup by adding:
 
 Useful aliases
