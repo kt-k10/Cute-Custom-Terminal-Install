@@ -1,0 +1,5 @@
+custom_terminal_setup_install/
+├── install.sh
+├── ascii_art.txt
+├── aliases.sh
+├── README.md
