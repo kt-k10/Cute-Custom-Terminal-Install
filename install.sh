@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#!/bin/bash
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Cute log function
 log() {
@@ -26,16 +26,41 @@ log "Backed up your original shell config to ${SHELL_RC}.backup"
 log "Adding custom aliases..."
 cat aliases.sh >> "$SHELL_RC"
 
-# Add ASCII art greeting
-log "Adding cute ASCII greeting..."
-echo -e '\ncat ~/Cute-Custom-Terminal-Install/ascii_art.txt' >> "$SHELL_RC"
+# ——— Add ASCII art greeting ———
+log "Adding cute ASCII greeting…"
+
+# Copy art file to a stable home location
+cp ascii_art.txt "$HOME/.ascii_art.txt"
+
+# Remove any old snippet between our markers (so reruns stay clean)
+
+# on macOS: sed needs the '' after -i
+# ——— Add ASCII art greeting ———
+log "Adding cute ASCII greeting…"
+
+# Copy art file…
+cp ascii_art.txt "$HOME/.ascii_art.txt"
+
+
+sed -i '' '/# Cute ASCII greeting/,/fi/d' "$SHELL_RC"
+
+# Append a single, safe cat-if-exists snippet
+cat << 'EOF' >> "$SHELL_RC"
+
+# Cute ASCII greeting
+if [ -f "$HOME/.ascii_art.txt" ]; then
+  cat "$HOME/.ascii_art.txt"
+fi
+EOF
+
 
 # Offer to install Starship (prompt)
 echo ""
 read -p "Do you want to install the Starship prompt for a nicer shell experience? (y/n): " install_starship
 if [ "$install_starship" = "y" ]; then
   curl -sS https://starship.rs/install.sh | sh
-  echo 'eval "$(starship init '$shell')" >> ~/.${shell}rc
+  echo "eval \"\$(starship init $shell)\"" >> ~/.${shell}rc
+
   log "Starship installed and added to your shell config."
 fi
 
